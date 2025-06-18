@@ -1,4 +1,4 @@
-# Smart Parking System - UI
+# Digital Parking System - UI
 
 This project provides the user interface for ParkSmart using HTML, CSS, JavaScript, and monitoring scripts.
 
