@@ -1,0 +1,122 @@
+body {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.card {
+  max-width: 950px;
+  width: 100%;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.leftside-panel {
+  background-color: #eef3fb;
+  padding: 2rem;
+}
+
+.leftside-panel h2 {
+  font-weight: bold;
+  color: #2f2f2f;
+}
+
+.leftside-panel p {
+  color: #555;
+}
+
+.rightside-panel {
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2f80ed;
+}
+
+.caption {
+  font-size: 0.95rem;
+  color: #6c757d;
+}
+
+.login-btn {
+  background-color: #2f80ed;
+  color: #fff;
+}
+
+.login-btn:hover {
+  background-color: #1c6cd8;
+}
+
+.input-group-text {
+  border-right: 0;
+  background-color: #f0f0f0;
+}
+
+.form-control {
+  border-left: 0;
+}
+
+a {
+  color: #2f80ed;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #1c6cd8;
+}
+
+@media (max-width: 768px) {
+  .leftside-panel,
+  .rightside-panel {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card-body {
+    flex-direction: column;
+  }
+
+  .rightside-panel {
+    padding-top: 1rem;
+  }
+
+  .form-label,
+  .forgot-password,
+  .form-section .text-start {
+    text-align: left !important;
+    display: block;
+  }
+}
+
+.toggle-link {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.form-section {
+  display: none;
+}
+
+.form-section.active {
+  display: block;
+}
+
+.forgot-password {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+  text-decoration: none;
+}

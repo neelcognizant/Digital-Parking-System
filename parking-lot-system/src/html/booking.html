@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smart Parking System - Book</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .section-title {
+        font-weight: 600;
+        margin-top: 40px;
+      }
+      .form-section {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .navbar {
+        background-color: #007bff;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: white !important;
+      }
+      .nav-link:hover {
+        text-decoration: underline;
+      }
+      .btn-primary {
+        background-color: #007bff;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+      label {
+        font-weight: normal;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/booking_validation.js" defer></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-4">
+      <div class="container-fluid">
+        <span class="navbar-brand fw-bold"
+          ><i class="fa-solid fa-square-parking me-1"></i> Smart Parking</span
+        >
+        <div class="d-flex">
+          <a class="nav-link ms-3" href="login.html">Logout</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Booking Form -->
+    <div class="container my-5">
+      <h2 class="text-center fw-bold">Book Your Parking Spot</h2>
+      <p class="text-center text-muted mb-5">
+        Select your preferred parking location and reserve your spot instantly
+      </p>
+
+      <form class="form-section mx-auto" style="max-width: 900px">
+        <!-- Vehicle Information -->
+        <h4 class="section-title">
+          <i class="fa-solid fa-car me-2"></i>Vehicle Information
+        </h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="vehicleType" class="form-label">Vehicle Type *</label>
+            <select id="vehicleType" class="form-select" required>
+              <option selected disabled>Select vehicle type</option>
+              <option>Car</option>
+              <option>Bike</option>
+              <option>Van</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="regNumber" class="form-label"
+              >Registration Number *</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="regNumber"
+              placeholder="e.g., ABC-1234"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="vehicleColor" class="form-label">Vehicle Color *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="vehicleColor"
+              placeholder="e.g., Red, Blue, Black"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="driverName" class="form-label">Driver Name *</label>
+            <input
+              type="text"
+              class="form-control"
+              id="driverName"
+              placeholder="Full name"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <h4 class="section-title">
+          <i class="fa-solid fa-user me-2"></i>Contact Information
+        </h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="email" class="form-label">Email Address *</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="your.email@example.com"
+              required
+            />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="phone" class="form-label">Phone Number *</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="+1 (555) 123-4567"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Parking Details -->
+        <h4 class="section-title">
+          <i class="fa-solid fa-calendar-days me-2"></i>Parking Details
+        </h4>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="parkingDate" class="form-label">Parking Date *</label>
+            <input type="date" class="form-control" id="parkingDate" required />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="parkingTime" class="form-label">Parking Time *</label>
+            <input type="time" class="form-control" id="parkingTime" required />
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="duration" class="form-label">Duration (hours) *</label>
+            <select id="duration" class="form-select" required>
+              <option selected disabled>Select duration</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4+</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="floor" class="form-label">Preferred Floor</label>
+            <select id="floor" class="form-select">
+              <option>Any available</option>
+              <option>Ground</option>
+              <option>Level 1</option>
+              <option>Level 2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="requirements" class="form-label"
+            >Special Requirements</label
+          >
+          <textarea
+            class="form-control"
+            id="requirements"
+            rows="3"
+            placeholder="Any special requirements or notes..."
+          ></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="terms" required />
+          <label class="form-check-label" for="terms">
+            I agree to the <a href="#">Terms and Conditions</a> and
+            <a href="#">Privacy Policy</a> *
+          </label>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary px-5 py-2">
+            <i class="fa-solid fa-calendar-check me-2"></i>Book Parking Spot
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

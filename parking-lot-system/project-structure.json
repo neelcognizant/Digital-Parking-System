@@ -1,0 +1,35 @@
+{
+  "project_name": "parking-lot-system",
+  "sprint": "Sprint-1",
+  "directories": [
+    "src/",
+    "src/css/",
+    "src/js/",
+    "src/images/",
+    "scripts/",
+    "docs/",
+    "tests/"
+  ],
+  "files": {
+    "frontend": [
+      "index.html",
+      "booking.html",
+      "dashboard.html",
+      "src/css/style.css",
+      "src/css/responsive.css",
+      "src/js/main.js",
+      "src/js/validation.js",
+      "src/js/booking.js"
+    ],
+    "scripts": [
+      "scripts/monitor-ui.sh",
+      "scripts/setup.sh"
+    ],
+    "config": [
+      "package.json",
+      ".gitignore",
+      "README.md",
+      "docs/sprint-1-requirements.md"
+    ]
+  }
+}

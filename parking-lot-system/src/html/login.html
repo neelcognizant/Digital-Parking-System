@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Parking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/login-style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/login_validation.js" defer></script>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-body row g-0">
+        <!-- Left Side -->
+        <div
+          class="leftside-panel col-md-6 d-flex flex-column justify-content-center text-center"
+        >
+          <h2>Tired of looking for free parking spaces?</h2>
+          <p class="lead">Start your day without any stress.</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="rightside-panel col-md-6">
+          <div class="text-center mb-4">
+            <div class="app-name">
+              <i class="fa-solid fa-square-parking me-2"></i>Smart Parking
+            </div>
+            <div class="caption">Welcome to Smart Parking</div>
+          </div>
+
+          <!-- Login Form -->
+          <div id="login-section" class="form-section active">
+            <form>
+              <div class="mb-3">
+                <label for="login-email" class="form-label">Email</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></span>
+                  <input
+                    type="email"
+                    id="login-email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-2">
+                <label for="login-password" class="form-label">Password</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-lock-fill"></i
+                  ></span>
+                  <input
+                    type="password"
+                    id="login-password"
+                    class="form-control"
+                    placeholder="Enter your password"
+                    required
+                  />
+                </div>
+              </div>
+              <a class="forgot-password" href="#">Forgot password?</a>
+              <div class="d-grid mb-3">
+                <button class="btn login-btn" type="submit">Login</button>
+                <p id="loginMessage"></p>
+                <p id="loginMessage1"></p>
+              </div>
+              <div class="text-start">
+                Don’t have an account?
+                <a class="toggle-link" onclick="toggleForm('signup')"
+                  >Sign up</a
+                >
+              </div>
+            </form>
+          </div>
+
+          <!-- Signup Form -->
+          <div id="signup-section" class="form-section">
+            <form>
+              <div class="mb-3">
+                <label for="signup-email" class="form-label">Email</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-envelope-fill"></i
+                  ></span>
+                  <input
+                    type="email"
+                    id="signup-email"
+                    class="form-control"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="signup-password" class="form-label">Password</label>
+                <div class="input-group">
+                  <span class="input-group-text"
+                    ><i class="bi bi-lock-fill"></i
+                  ></span>
+                  <input
+                    type="password"
+                    id="signup-password"
+                    class="form-control"
+                    placeholder="Create a password"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="d-grid mb-3">
+                <button class="btn login-btn" type="submit">Sign Up</button>
+              </div>
+              <div class="text-start">
+                Already have an account?
+                <a class="toggle-link" onclick="toggleForm('login')">Login</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleForm(section) {
+        document.getElementById("login-section").classList.remove("active");
+        document.getElementById("signup-section").classList.remove("active");
+        if (section === "signup") {
+          document.getElementById("signup-section").classList.add("active");
+        } else {
+          document.getElementById("login-section").classList.add("active");
+        }
+      }
+    </script>
+  </body>
+</html>
