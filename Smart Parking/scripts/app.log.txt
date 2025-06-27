@@ -1,0 +1,24 @@
+2025-06-27 11:01:55 INFO  projectpackage.BookingDAO - Booking inserted successfully for slot ID: 1
+2025-06-27 11:01:55 INFO  projectpackage.BookingDAO - Booking inserted successfully for slot ID: 1
+2025-06-27 11:01:55 INFO  projectpackage.BookingDAO - Booking inserted successfully for slot ID: 1
+2025-06-27 11:01:56 INFO  projectpackage.BookingDAO - Retrieved 1 available slots
+2025-06-27 11:01:56 INFO  projectpackage.BookingDAO - Retrieved 1 available slots
+2025-06-27 11:01:56 INFO  projectpackage.BookingDAO - Retrieved 1 available slots
+2025-06-27 11:02:23 INFO  projectpackage.BookingDAO - Booking inserted successfully for slot ID: 1
+2025-06-27 11:02:23 INFO  projectpackage.BookingDAO - Retrieved 1 available slots
+2025-06-27 11:14:28 INFO  projectpackage.BookingDAO - Booking inserted successfully for slot ID: 1
+2025-06-27 11:14:28 INFO  projectpackage.BookingDAO - Retrieved 1 available slots
+2025-06-27 15:37:19,904 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:37:20,305 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
+2025-06-27 15:41:33 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:41:33 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
+2025-06-27 15:42:11 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:42:11 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
+2025-06-27 15:42:52 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:42:53 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
+2025-06-27 15:43:16 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:43:16 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:43:17 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
+2025-06-27 15:43:17 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
+2025-06-27 15:43:25 INFO  projectpackage.BookingDAO - Booking inserted and slot 1 marked as OCCUPIED
+2025-06-27 15:43:26 INFO  projectpackage.BookingDAO - Retrieved 3 available slots
